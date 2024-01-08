@@ -20,15 +20,15 @@ const FeatureItems = ({title ,icon, description}:Features)=>{
 const Feature = () => {
   return (
     <section className=' bg-feature-bg'>
-      <div className='max-container relative justify-between gap-20 mt-28 flex'>
+      <div className='max-container relative justify-between gap-5 mt-28 flex'>
 
       <div className='flex flex-1'>
         <Image src="/phone.png" alt='phone' width={400} height={1000} className='feature-phone'/>
       </div>
-      <div>
+      <div className='xl:ml-40 lg:ml-10'>
       <Image src='/camp.svg' width={50} height={50} alt='camp' />
       <h1 className='bold-40'>Our Features</h1>
-      <ul className='grid md:grid-cols-2 mt-7 gap-20'>
+      <ul className='grid md:grid-cols-2 mt-7 gap-20 '>
         {FEATURES.map(item=>{
           return(
             <FeatureItems key={item.title} title={item.title} description={item.description} icon={item.icon}/>
