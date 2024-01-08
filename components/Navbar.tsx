@@ -6,7 +6,7 @@ import Button from "./Button";
 const Navbar = () => {
   return (
     <nav className=' py-3 shadow-sm'>
-      <div className='container flex justify-between items-center m-auto'>
+      <div className='lg:max-container flex justify-between items-center m-auto xs:max-w-[90%]'>
         <Link href='/'>
           <Image src='/hilink-logo.svg' alt='logo' width={74} height={29} />
         </Link>
